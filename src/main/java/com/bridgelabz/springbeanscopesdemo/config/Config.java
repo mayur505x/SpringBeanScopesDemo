@@ -9,8 +9,12 @@ import org.springframework.context.annotation.Scope;
 public class Config {
 
     @Bean
-    @Scope(scopeName = "prototype")
-    public Student studBean() {
+    public Student studBean1() {
+        return new Student();
+    }
+
+    @Bean
+    public Student studBean2() {
         return new Student();
     }
 }
