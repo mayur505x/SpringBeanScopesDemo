@@ -18,8 +18,8 @@ public class SpringBeanScopesDemoApplication {
         Student s1 = con.getBean("studBean", Student.class);
         Student s2 = con.getBean("studBean", Student.class);
 
-        System.out.println(s1.hashCode());
-        System.out.println(s2.hashCode());
+        System.out.println(s1.hashCode()); //for singleton has code will be same
+        System.out.println(s2.hashCode()); //for singleton has code will be same
     }
 
 }
